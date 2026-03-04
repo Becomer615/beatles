@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body  {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #e9ecf2;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 0, 0.5), transparent 30%), #0c0f14;
+}
+
+.wrap {
+    width: min(1100px, 90vw);
+    margin: 0 auto;
+    padding: 1rem
+}
+
+header {
+    padding: 3rem 0 2rem;
+    background: linear-gradient(135deg, rgba(240, 195, 48, 0.2), rgba(30, 36, 45, 0.5));
+}
+
+header .wrap {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+}
+
+.eyebrow {
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75;
+    color: #f0c330;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+}
+
+.lede {
+    margin: 0;
+    max-width: 38ch;
+}
+
+.hero-image {
+    margin: 0;
+    background: #1e242d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08)
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-image p {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+main {
+    padding: 2rem 0 3rem;
+}
+
+.panel {
+    background: #161a21;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25)
+}
+
+.panel h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #f0c330;
+}
+
+.panel p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+:link {color: yellow;}
+
+:visited {
+    color: #f0c330;
+}
+
+.two-column {
+    display: grid; 
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+embed {
+    width: 100%;
+}
+
+.responsive-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: #0b0f16;
+    border-radius: 10xp;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0, 0.08);
+}
+
+.responsive-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed iframe {
+    width: 100%;
+    min-height: 240px;
+    border: 0;
+    border-radius: 10px;
+    background: 0#0b0f16;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding: 1.5rem 0 2rem;
+    text-align: center;
+    color: #a5adbd;
+    background: linear-gradient(180deg, rgba(30, 36, 45, 0.8), rgba(240, 195, 48, 0.2));
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
